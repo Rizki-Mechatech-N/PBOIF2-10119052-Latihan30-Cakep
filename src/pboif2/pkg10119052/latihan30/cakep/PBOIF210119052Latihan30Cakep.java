@@ -10,26 +10,26 @@ import java.util.Scanner;
  * 
  */
 public class PBOIF210119052Latihan30Cakep {
-  public static final String normal = "\u001b[0m";
-  public static final String hitam = "\u001b[30m";
-  public static final String merah = "\u001b[31m";
-  public static final String hijau = "\u001b[32m";
-  public static final String kuning = "\u001b[33m";
-  public static final String biru = "\u001b[34m";
-  public static final String magenta = "\u001b[35m";
-  public static final String cyan = "\u001b[36m";
-  public static final String putih = "\u001b[37m";
+  public static final String NORMAL = "\u001b[0m";
+  public static final String BLACK = "\u001b[30m";
+  public static final String RED = "\u001b[31m";
+  public static final String GREEN = "\u001b[32m";
+  public static final String YELLOW = "\u001b[33m";
+  public static final String BLUE = "\u001b[34m";
+  public static final String MAGENTA = "\u001b[35m";
+  public static final String CYAN = "\u001b[36m";
+  public static final String WHITE = "\u001b[37m";
   
-  public static final String blink = "\u001b[5m";
+  public static final String BLINK = "\u001b[5m";
   
   public static void kondisi(String warna){
       if ("Yoi".equals(warna)) {
           System.out.println();
-          System.out.println(merah+"Cakep Bener," +magenta+" Good Job");
+          System.out.println(RED+"Cakep Bener," +MAGENTA+" Good Job");
       }else{
           System.out.println();
-          System.out.println(merah+"Tetep cakep sih");
-          System.out.println(cyan+"Sing penting paham konsepnya yee.");
+          System.out.println(RED+"Tetep cakep sih");
+          System.out.println(CYAN+"Sing penting paham konsepnya yee.");
           System.out.println("Keep the code works dude");
       }
   }
@@ -37,9 +37,9 @@ public class PBOIF210119052Latihan30Cakep {
     public static void main(String[] args) {
         Scanner masuk = new Scanner(System.in);
         String warna;
-        System.out.println(merah+"Kamu"+hijau+" ngerjain sendiri"+kuning+
-                "latihan 17 sampe"+biru+" latihan 30 ini?");
-        System.out.print(biru+"Jawab"+merah+" (Yoi/Enggak) : ");
+        System.out.println(RED+"Kamu"+GREEN+" ngerjain sendiri"+YELLOW+
+                "latihan 17 sampe"+BLUE+" latihan 30 ini?");
+        System.out.print(BLUE+"Jawab"+RED+" (Yoi/Enggak) : ");
         warna = masuk.next();
         System.out.println();
         kondisi(warna);
